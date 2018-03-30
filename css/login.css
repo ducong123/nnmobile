@@ -1,0 +1,134 @@
+.content {
+    -webkit-box-shadow: 0 0 30px rgba(140, 138, 138, 0.5);
+    -moz-box-shadow: 0 0 30px rgba(140, 138, 138, 0.5);
+    box-shadow: 0 0 30px rgba(140, 138, 138, 0.5);
+    margin: 60px 30px 30px;
+    padding: 10px;
+    border-radius: 20px;
+}
+.login_icon {
+    text-align: center;
+    height: 80px;
+}
+.login_icon img{
+	height:100%;
+}
+
+.login_con .login_div {
+    width: 90%;
+    margin: 0px auto 15px;
+    position: relative;
+}
+
+.login_con .login_div .login_text {
+    width: 80%;
+    padding: 3px 10%;
+    height: 30px;
+    border-radius: 40px;
+    font-size: 15px;
+}
+.login_con .login_div .cl_text{
+	display:none;
+}
+
+.login_con .login_div .input_icon {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    display: block;
+    line-height: 45px;
+}
+.login_con .login_div .input_icon i.fa{
+	  width: 30px;
+	  color: #c7c6c6;
+}
+.login_con .login_div .input_icon i.fa-eye{
+	font-size:16px;
+}
+.login_con .login_div .input_icon i.fa-times-circle{
+	font-size:20px;
+}
+.input_icon .yzm{
+	padding-right:10px;
+	font-size: 10px;
+	border: 0px;
+	background: #fff;
+	color: #656565;
+}
+.login_con .login_div .cur_pass i.fa{
+	color: #656565 !important;
+}
+.login_con .login_div .input_del {
+    display: none;
+}
+
+.promt_div {
+    width: 80%;
+    margin: auto;
+    position: relative;
+    top: -5px;
+    height: 20px;
+}
+
+.promt_div .prompt {
+    color: #f72d2d;
+}
+.promt_div  .promt_right{
+	position: absolute;
+	right: 0px;
+	font-size: 10px;
+	top:0px;
+}
+.promt_div .promt_right a{
+    color: #8a8787;
+}
+.login_but {
+    width: 100%;
+    border: 0px;
+    border-radius: 40px;
+    height: 40px;
+    background: #bd1016;
+    color: #fff;
+    line-height: 40px;
+    text-align: center;
+}
+.other_login .other_login_p{
+	text-align:center;
+	font-weight:bold;
+	margin:10px 0px;
+}
+.other_login .other_login_ul{
+	margin:20px 20%;
+}
+.other_login .other_login_ul li{
+	float: left;
+	width:33%;
+	text-align:center;
+}
+.reg_a{
+	display: block;
+	text-align: center;
+	color: #8a8787;
+	margin-bottom: 20px;
+}
+
+/*注册*/
+.login_checkbox{
+	font-size:12px;
+	text-align: center;
+	position: relative;
+	top: -7px;
+}
+.login_checkbox .agree{
+	border:1px solid #999;
+	width:18px;
+	height:18px;
+}
+.agree_text{
+	position:relative;
+	top: -4px;
+}
+.login_checkbox a{
+	font-size:12px;
+}
+/*注册 end*/
