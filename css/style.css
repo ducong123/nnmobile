@@ -16,7 +16,7 @@ ul li{
 a{ 
   text-decoration:none;
 } 
-input[type="text"],input[type="password"], button, select, textarea {outline: none;-webkit-appearance: none;border-radius: 0;padding: 0px;margin: 0px;}
+input[type="text"],input[type="password"],input[type="button"],button, select, textarea {outline: none;-webkit-appearance: none;border-radius: 0;padding: 0px;margin: 0px;}
 .clear:after{
 	content:'';
 	display:block;
@@ -26,6 +26,30 @@ input[type="text"],input[type="password"], button, select, textarea {outline: no
 	height: 15px;
 	background: #f8f8f8;
 }
+/*欢迎页面*/
+#welcome{
+	background: #c81623;
+}
+.wel_heig{
+    height: 300px;
+    padding: 30% 0px 20%;
+}
+.wel_heig img{
+	width: 100%;
+	height:100%;
+}
+.tguo-btn-a{
+    display: block;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 30px;
+    margin: 20px auto 10px;
+    text-align: center;
+    background: #b9b5b5;
+    color: #fff;
+}
+/*欢迎页面end*/
 /*头部标题*/
 .header_s {
     width: 100%;
@@ -78,7 +102,7 @@ input[type="text"],input[type="password"], button, select, textarea {outline: no
 /*头部标题end*/
 .pages{
 	background:#fff;
-	margin-top: 46px;
+    margin: 46px 0px 61px;
 }
 /*底部导航*/
 .footer {

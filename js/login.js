@@ -44,24 +44,28 @@ $(function(){
     })
     
     //发送验证码倒计时
-    var countdown=60; 
-    $(".input_icon .yzm").click(function(){
-    	time()
+    $(".yzm").click(function(){
+        invokeSettime($(this))
     })
-    function time(obj){
-    	if(countdown == 0){
-    		$(".input_icon .yzm").removeAttr('disabled');
-    		$(".input_icon .yzm").val("获取验证码");
-    		countdown = 60; 
-    	}else{  
-            //btnObj.setAttribute("disabled", true);  
-    		$(".input_icon .yzm").attr('disabled','disabled');  
-    		$(".input_icon .yzm").val( countdown + "s后可重新获取");  
-    		countdown--;  
-            t=setTimeout(function(){  
-                time();  
-            },1000)  
-        }  
-    }
+    function invokeSettime(obj){
+        var countdown=60;
+        settime(obj);
+        function settime(obj) {
+            if (countdown == 0) {
+                $(obj).attr("disabled",false);
+                $(obj).val("获取验证码");
+                countdown = 60;
+                return;
+            } else {
+                $(obj).attr("disabled",true);
+                $(obj).val( countdown + "s 重新发送");
+                countdown--;
+            }
+            setTimeout(function() {
+                        settime(obj) }
+                    ,1000)
+        }
+  }
+
    
 })
