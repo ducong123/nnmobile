@@ -15,17 +15,21 @@ $(function(){
     })
     //密码的显示隐藏
     $(".input_pass").click(function(){
-    	var cl_textval=$(".cl_text").val();
-    	var cl_passtval=$(".cl_pass").val();
+        var cl_text=$(this).parent("").find(".cl_text");//当前父标签下的文本框
+        var cl_pass=$(this).parent("").find(".cl_pass");//当前父标签下的密码框
+    	var cl_textval=cl_text.val();//文本框当前值
+    	var cl_passtval=cl_pass.val();//密码框当前值
     	if($(this).hasClass("cur_pass")){
     		$(this).removeClass("cur_pass");
-    		$(".cl_pass").val(cl_textval).show();
-    		$(".cl_text").hide();
+    		cl_text.hide();
+            cl_pass.val(cl_textval)
+            cl_pass.show();
     	}else{
     		$(this).addClass("cur_pass");
-    		$(".cl_pass").hide();
-    		$(".cl_text").val(cl_passtval);
-    		$(".cl_text").show();
+    		 cl_pass.hide();
+    		 cl_text.val(cl_passtval);
+    		 cl_text.show();
+            
     	}
     })
     //点击登录验证用户名和密码

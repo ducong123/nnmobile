@@ -1,20 +1,30 @@
-@charset "utf-8"; /*header*/
+@charset "utf-8"; 
+body{
+	
+}
 body,div,h1,h2,h3,h4,h5,h6,a,ul,li,p{
 	padding:0;
 	margin:0;
 	font-size:14px;
 	font-family: " Microsoft YaHei";
+	color: #333;
 
 }
 ul li{
 	list-style:none;
 }
-a{ text-decoration:none} 
+a{ 
+  text-decoration:none;
+} 
 input[type="text"],input[type="password"], button, select, textarea {outline: none;-webkit-appearance: none;border-radius: 0;padding: 0px;margin: 0px;}
 .clear:after{
 	content:'';
 	display:block;
 	clear:both;
+}
+.interval{
+	height: 15px;
+	background: #f8f8f8;
 }
 /*头部标题*/
 .header_s {
@@ -43,6 +53,28 @@ input[type="text"],input[type="password"], button, select, textarea {outline: no
     text-align: center;
     font-weight: 400;
 }
+.right_icon{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    display: block;
+    line-height: 45px;
+    width: 40px;
+}
+.right_icon .fa-commenting-o{
+	font-size: 23px;
+}
+.comments:after{
+	content: "";
+	width:10px;
+	height: 10px;
+	background: #e03939;
+	border-radius: 10px;
+	position: absolute;
+	top: 10px;
+    right: 13px;
+
+}
 /*头部标题end*/
 .pages{
 	background:#fff;
@@ -66,9 +98,7 @@ input[type="text"],input[type="password"], button, select, textarea {outline: no
 	text-align:center;
    
 }
-.footer_nav a{
-	 color: #868383;
-}
+
 .footer_nav i.fa{
 	font-size:25px;
 }
@@ -76,3 +106,50 @@ input[type="text"],input[type="password"], button, select, textarea {outline: no
 	color:#c91523;
 }
 /*底部导航 end*/
+/*注册成功*/
+h3.reg_ok{
+	text-align: center;
+	color: #999;
+	font-size: 20px;
+	padding-top:30px;
+}
+h5.reg_h5{
+	text-align: center;
+	color: #999;
+	font-size: 16px;
+	padding-top: 15px;
+}
+.protuct_a{
+	width: 80%;
+	margin:10px auto;
+	border-top:1px solid #ddd;
+	padding: 10px 0px;
+}
+.protuct_a a{
+    border: 1px solid #ddd;
+    padding: 5px 10px;
+    border-radius: 10px;
+    display: block;
+    float: left;
+    margin-top: 10px;
+    margin-right: 10px;
+    color: #888;
+}
+.cur_pro_a{
+	background:#eee;
+}
+.div_a_but{
+	text-align: center;
+	margin: 20px;
+}
+.div_a_but a.gz_a,.div_index a{
+	padding: 7px 20px;
+	border: 1px solid #999;
+	border-radius: 20px;
+	background: #eee;
+}
+.div_index{
+	margin:50px auto;
+	text-align: center; 
+}
+/*注册成功 end*/
