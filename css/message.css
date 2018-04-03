@@ -1,0 +1,93 @@
+/*消息*/
+.invoice-top-no {
+    background: #fff;
+    text-align: center;
+    width: 100%;
+}/*暂无消息*/
+.message_list .message_con{ 
+    padding: 10px 0px;
+    border-bottom: 1px solid #e9e9e9;
+}
+.message_list .message_con .mes_c {
+    margin: 0 15px;
+    line-height: 28px;
+    position: relative;
+}
+.ba_img {
+    float: left;
+    width: 5px;
+    height: 5px;
+    border-radius: 50px;
+    background: #bd1016;
+    margin: 10px 0px;
+}/*未读消息标注*/
+.message_con .con {
+    display: block;
+}
+.message_con .con .new_time {
+    position: absolute;
+    right: 0px;
+}
+.message_con .con .new_con {
+    height: 28px;
+    line-height: 28px;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.edit-con{
+    margin-left: 30px;
+}
+.mes_c .checkbox{
+    position: absolute;
+    width: 30px;
+    height: 56px;
+    line-height: 56px;
+}
+.check{
+    border: 1px solid #333;
+    width: 12px;
+    height: 12px;
+}
+.check.fa-check{
+    color: #bd1016;
+}
+
+
+.bottom-btn{
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    background: #f8f8f8;
+    border-top: 1px solid #e9e9e9;
+}
+.bottom-btn .bottom-div{
+    float: left;
+    width: 33%;
+
+}
+.bottom-btn .bottom-div span{
+    display: block;
+    text-align: center;
+}
+/*消息详情*/
+.me-detail{
+    padding: 20px;
+}
+.me-detail .title h3{
+    font-size: 16px;
+}
+.me-detail  .detail-p{
+    line-height: 25px;
+    text-indent: 20px;
+    margin: 10px 0px;
+    font-size: 14px;
+}
+.me-detail .me-time{
+    text-align: right;
+    color: #999;
+}
+/*消息 end*/

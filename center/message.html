@@ -9,42 +9,49 @@
 
 <link rel="stylesheet" href="../css/font-awesome-4.7.0/css/font-awesome.min.css"/>
 <link rel="stylesheet" href="../css/style.css"/><!-- 通用样式表 -->
-<link rel="stylesheet" href="../css/center.css"/>
+<link rel="stylesheet" href="../css/message.css"/>
 <script src="../js/jquery-1.9.1.min.js"></script>
 </head>
 <body>
   <header>
     <div class="header_s">
       <a class="new-a-back" href="javascript:history.back();"><i class="fa fa-angle-left"></i> </a>
-      <h2>编辑账户</h2>
+      <h2>消息</h2>
+      <a href="edit_message.html" class="right_icon">
+        <span>编辑</span>
+      </a>
     </div>
   </header>
   <div class="pages">
-  <form>
-    <div class="account_cont">
-      <div class="edit_account clear">
-          <div class="edit_div account_name"><b>用户名</b></div>
-          <div class="edit_div edit_input">
-             <input type="text" name="" value="minming" placeholder="输入用户名">
-          </div>
-      </div>
-      <div class="edit_account clear">
-          <div class="edit_div account_name"><b>手机号</b></div>
-          <div class="edit_div edit_input"><span>1900000</span></div>
-           <div class="right_div">
-             <a class="edit_mobile_but" href="edit_mobile.html">修改手机号</a>
-           </div>
-      </div>
-      <div class="edit_account clear">
-          <div class="edit_div account_name"><b>电子邮箱</b></div>
-          <div class="edit_div edit_input">
-             <input type="text" name="" value="" placeholder="邮箱">
-          </div>
-      </div>
+    <!-- 没有信息显示 开始-->
+  <div class="invoice-top-no" style="display:none;">
+      <img src="../images/icon/fap_no.jpg"/>
+      <p>暂无信息</p>
+  </div>
+  <!-- 没有信息 结束-->
+  <!-- 有信息显示 开始-->
+    <div class="message_list">
+        <div class="message_con">
+            <div class="mes_c">
+              <a class="con" href="messagedetail.html">
+                  <div class=""></div>
+                  <b class="">【耐耐网】</b>
+                  <span class="new_time">05-18 10:22</span>
+                  <div class="new_con">认证已通过，现在您可以进行交易了~</div>
+              </a>
+            </div>
+        </div>
+        <div class="message_con" href="messagedetail.html">
+            <div class="mes_c">
+              <a class="con">
+                  <div class="ba_img"></div>
+                  <b class="">【耐耐网】</b>
+                  <span class="new_time">05-18 10:22</span>
+                  <div class="new_con">认证已通过，现在您可以进行交易了~</div>
+              </a>
+            </div>
+        </div>
     </div>
-    
-    <div class="edit_but"><a href="account.html">修改</a></div>
-    </form>
   </div>
   <div class="footer" data-role="footer">
       <div class="footer_nav">
