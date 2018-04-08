@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="author" content="m.178hui.com" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<meta name="format-detection" content="telephone=no">
+<title>耐耐网·触摸版</title>
+
+<link rel="stylesheet" href="../css/font-awesome-4.7.0/css/font-awesome.min.css"/>
+<link rel="stylesheet" href="../css/style.css"/><!-- 通用样式表 -->
+<link rel="stylesheet" href="../css/center.css"/>
+<script src="../js/jquery-1.9.1.min.js"></script>
+</head>
+<body>
+  <header>
+    <div class="header_s">
+      <a class="new-a-back" href="javascript:history.back();"><i class="fa fa-angle-left"></i> </a>
+      <h2>仓库管理员</h2>
+    </div>
+  </header>
+  <div class="pages">
+  <form>
+  <div class="top_nav">
+    <ul class="top_nav_ul clear">
+      <li class="top_nav_ul_li">
+        <a class="rzxx cur">选择仓库</a>
+      </li>
+      <li class="top_nav_ul_li">
+        <a class="zizhphoto">认证信息</a>
+      </li>
+      <li class="top_nav_ul_li">
+        <a class="sresult">审核结果</a>
+      </li>
+    </ul>
+  </div>
+  <div class="interval"></div>
+    <div class="account_cont autheninfo">
+      <div class="edit_account clear">
+          <div class="edit_div account_name">
+            <span>选择仓库</span>
+          </div>
+          <div class="edit_div edit_input">
+             <select class="select_input">
+               <option>请选择</option>
+             </select>
+             <div class="down_div"><i class="fa fa-caret-down"></i></div>
+             <span class="e039">请选择仓库</span>
+          </div>
+      </div>
+      <div class="edit_account clear">
+          <div class="edit_div account_name">
+            <span>仓库地址</span>
+          </div>
+          <div class="edit_div edit_input">
+             <input type="text" name="" placeholder="请输入">
+          </div>
+      </div>
+       <div class="edit_but"><a class="down_auphoto">下一步</a></div>
+    </div>
+
+   <!--  仓库认证信息 -->
+   <div class="account_cont authenPhoto" style="display: none;">
+      <div class="edit_account clear">
+          <div class="edit_div account_name">
+            <b class="e039">*</b>
+            <span>公司名</span>
+          </div>
+          <div class="edit_div edit_input">
+             <input type="text" name="" placeholder="请输入">
+          </div>
+      </div>
+      <div class="edit_account clear">
+          <div class="edit_div account_name">
+            <b class="e039">*</b>
+            <span>法定代表人</span>
+          </div>
+          <div class="edit_div edit_input">
+             <input type="text" name="" placeholder="请输入">
+          </div>
+      </div>
+      <div class="edit_account clear">
+          <div class="edit_div account_name">
+            <b class="e039">*</b>
+            <span>联系人</span>
+          </div>
+          <div class="edit_div edit_input">
+             <input type="text" name="" placeholder="请输入">
+          </div>
+      </div>
+      <div class="edit_account clear">
+          <div class="edit_div account_name">
+            <b class="e039">*</b>
+            <span>联系电话</span>
+          </div>
+          <div class="edit_div edit_input">
+             <input type="text" name="" placeholder="请输入">
+          </div>
+      </div>
+      <div class="edit_account clear">
+          <div class="edit_div account_name">
+            <b class="e039">*</b>
+            <span>地区</span>
+          </div>
+          <div class="edit_div edit_input">
+              <input id="area" placeholder="省、市、区" areaid="10064 10043 10375" readonly="" class="txt-input">
+          </div>
+      </div>
+      <div class="edit_account clear">
+          <div class="edit_div account_name">
+            <b class="e039">*</b>
+            <span>详细地址</span>
+          </div>
+          <div class="edit_div edit_input">
+             <input type="text" name="" placeholder="请输入">
+          </div>
+      </div>
+      <div class="edit_account clear">
+          <div class="edit_div account_name">
+            <b class="e039">*</b>
+            <span>主营品种</span>
+          </div>
+          <div class="edit_div edit_input">
+             <input type="text" name="" placeholder="请输入">
+          </div>
+      </div>
+       <div class="edit_but"><a class="submit_a">提交</a></div>
+    </div>
+   <!--  仓库认证信息 end-->
+    <!--  审核结果 -->
+      <div class="mobsuc_containt shresult" style="display: none;">
+        <div class="mob_info">
+          <a href=""><img src="../images/icon/sure_rz.png" alt=""></a>
+           <!-- 验证失败图 -->
+          <a style="display: none;" href=""><img src="../images/icon/fail.png" alt=""></a>
+             <!-- 验证失败图 end -->
+          <!-- 待验证 -->
+          <a style="display: none;" href=""><img src="../images/icon/stay.png" alt=""></a>
+          <!-- 待验证 end -->
+          <p class="new_paswod">恭喜您！我们将会在2个工作日内进行处理，请您耐心等待，关注消息</p>
+           <p class="new_paswod" style="display:none">恭喜您！密码修改成功！请您牢记您的密码</p>
+        </div>
+        <div class="edit_but">
+          <a class="edit_mobile_btn" href="ucenter.html">返回会员中心</a>
+        </div>
+      </div>
+    <!--  审核结果 -->
+    
+   
+    </form>
+  </div>
+  <div class="footer" data-role="footer">
+      <div class="footer_nav">
+         <a href="../index.html">
+        <i class="fa fa-home"></i>
+        <div>首页</div>
+         </a>
+      </div>
+      <div class="footer_nav">
+         <a href="">
+        <i class="fa fa-location-arrow"></i>
+        <div>发布</div>
+         </a>
+      </div>
+      <div class="footer_nav">
+         <a href="">
+        <i class="fa fa-bars"></i>
+        <div>订单</div>
+         </a>
+      </div>
+      <div class="footer_nav cur_on">
+         <a href="ucenter.html">
+        <i class="fa fa-user"></i>
+        <div>我的</div>
+         </a>
+      </div>
+    </div>
+<script src="../js/center/center.js"></script>
+<!-- 地区选择联动 strat-->
+<link href="../css/area/mobiscroll.scroller.css" rel="stylesheet" />
+<link href="../css/area/mobiscroll.scroller.android-ics.css" rel="stylesheet" />
+<script src="../js/area/zepto.js"></script>
+<script src="../js/area/mobiscroll.zepto.js" type="text/javascript"></script>
+<script src="../js/area/mobiscroll.core.js" type="text/javascript"></script>
+<script src="../js/area/mobiscroll.scroller.js" type="text/javascript"></script>
+<script src="../js/area/mobiscroll.area.js"></script>
+<script src="../js/area/mobiscroll.scroller.android-ics.js"></script>
+<script src="../js/area/i18n/mobiscroll.i18n.zh.js"></script>
+<script>
+  var valo = $("#area").attr("areaid");
+  $('#area').scroller('destroy').scroller({ preset: 'area', theme: 'android-ics light', display: 'bottom',valueo:valo });
+
+  
+</script>
+<!-- 地区选择联动 end-->
+</body>
+</html>

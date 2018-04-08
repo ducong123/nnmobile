@@ -9,49 +9,40 @@
 
 <link rel="stylesheet" href="../css/font-awesome-4.7.0/css/font-awesome.min.css"/>
 <link rel="stylesheet" href="../css/style.css"/><!-- 通用样式表 -->
-<link rel="stylesheet" href="../css/message.css"/>
+<link rel="stylesheet" href="../css/center.css"/>
 <script src="../js/jquery-1.9.1.min.js"></script>
 </head>
 <body>
   <header>
     <div class="header_s">
       <a class="new-a-back" href="javascript:history.back();"><i class="fa fa-angle-left"></i> </a>
-      <h2>消息</h2>
-      <a href="edit_message.html" class="right_icon">
-        <span>编辑</span>
-      </a>
+      <h2>认证</h2>
+     
     </div>
   </header>
   <div class="pages">
-    <!-- 没有信息显示 开始-->
-  <div class="invoice-top-no" style="display:none;">
-      <img src="../images/icon/fap_no.jpg"/>
-      <p>暂无信息</p>
-  </div>
-  <!-- 没有信息 结束-->
-  <!-- 有信息显示 开始-->
-    <div class="message_list">
-        <div class="message_con">
-            <div class="mes_c">
-              <a class="con" href="messagedetail.html">
-                  <div class=""></div>
-                  <b class="">【耐耐网】</b>
-                  <span class="new_time">05-18 10:22</span>
-                  <div class="new_con">认证已通过，现在您可以进行交易了~</div>
-              </a>
-            </div>
+    <div class="autben-title">请选择认证角色</div>
+    <div class="account_cont">
+      <div class="authen-list">
+        <div class="authen-raido">
+          <i class="radio fa fa-dot-circle-o"></i> 
+          &nbsp;<span value="grjys">个人交易商</span>
         </div>
-        <div class="message_con" href="messagedetail.html">
-            <div class="mes_c">
-              <a class="con" href="messagedetail.html">
-                  <div class="ba_img"></div>
-                  <b class="">【耐耐网】</b>
-                  <span class="new_time">05-18 10:22</span>
-                  <div class="new_con">认证已通过，现在您可以进行交易了~</div>
-              </a>
-            </div>
+      </div>
+      <div class="authen-list">
+        <div class="authen-raido">
+          <i class="radio fa fa-circle-o"></i> 
+          &nbsp;<span value="qyjys">企业交易商</span>
         </div>
+      </div>
+      <div class="authen-list">
+        <div class="authen-raido">
+          <i class="radio fa fa-circle-o"></i> 
+          &nbsp;<span value="ckgly">仓库管理员</span>
+        </div>
+      </div>
     </div>
+    <div class="edit_but"><a class="roleqrz">去认证</a></div>
   </div>
   <div class="footer" data-role="footer">
       <div class="footer_nav">
@@ -79,6 +70,6 @@
          </a>
       </div>
     </div>
-
+<script src="../js/center/center.js"></script>   
 </body>
 </html>

@@ -49,7 +49,7 @@
             <a class="uploadimga" imgid="img_01" removeboxid="removebox_01" removeid="remove_01" >
                 点击上传 <i class="fa fa-camera-retro"></i>
             </a>
-            <a class="example">要求说明</a>
+            <a class="example example_btn1">要求说明</a>
           </div>
        </div>
        <div  class="removebox" id="removebox_01">
@@ -62,7 +62,7 @@
             <a class="uploadimga" imgid="img_02" removeboxid="removebox_02" removeid="remove_02" >
                 点击上传 <i class="fa fa-camera-retro"></i>
             </a>
-            <a class="example">要求说明</a>
+            <a class="example example_btn2">要求说明</a>
           </div>
        </div>
        <div  class="removebox" id="removebox_02">
@@ -105,7 +105,19 @@
          </a>
       </div>
     </div>
-<script src="../js/login.js"></script>
+<!-- 遮罩层 -->
+<div class="mask" id="mask"></div>
+<div class="example_con conshow1">
+  <div class="exdelete"><i class="fa fa-times-circle-o"></i></div>
+  <h3>要求说明</h3>
+  <p>营业执照上传时图片信息需清晰可见，要求盖有企业公章。图片大小不超过2M</p>
+</div>
+<div class="example_con conshow2">
+  <div class="exdelete"><i class="fa fa-times-circle-o"></i></div>
+  <h3>要求说明</h3>
+  <p>申请单格式无要求，上传时请保证申请单图片上所有说明信息清晰可见，（企业账号需要加盖企业公章），图片大小不超过2M</p>
+</div>
+<script src="../js/center/center.js"></script>
 <!-- 上传图片 -->
 <script src="../js/center/mit_upload.js"></script>
 </body>
