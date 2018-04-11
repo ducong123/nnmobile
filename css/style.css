@@ -111,21 +111,23 @@ input[type="text"],input[type="password"],input[type="button"],button, select, t
 	z-index:10;
 	border-top: 1px solid #b2b2b2;
 	width:100%;
-	padding:5px 0px;
+/*	padding:5px 0px;*/
 }
 .footer_nav{
 	float:left;
 	width:25%;
     padding: 4px 0;
 	text-align:center;
-   
+}
+.footer_nav a{
+	display: block;
 }
 
 .footer_nav i.fa{
 	font-size:25px;
 }
 .cur_on a{
-	color:#c91523;
+	color:#c91523 !important;
 }
 /*底部导航 end*/
 /*注册成功*/
